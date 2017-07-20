@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- StyleSheets -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <title>Add Product</title>
+</head>
+<body>
+  <div class="container">
+    <div class="col-md-12">
+        <div class="col-md-6">
+          <div class="row">
+            <h2>Add Product</h2>
+            <form class="form" action="insert.php" method="post">
+              <div class="form-group">
+                <input type="text" name="itemname" id="itemname" class="form-control" placeholder="item name">
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="item-type" id="item-type">
+                  <option value="veg">Veg</option>
+                  <option value="nonveg">Non Veg</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="" class="col-md-12">Cusins</label>
+                <div class="col-md-12">
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="cuisin[]" id="cuisin1" value="indian">  Indian</label>
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="cuisin[]" id="cuisin2" value="odishi"> Odishi</label>
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="cuisin[]" id="cuisin3" value="chinese"> Chinese</label>
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="cuisin[]" id="cuisin4"value="tandoori"> Tandoori</label>
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="cuisin[]" id="cuisin4" value="southindian"> South Indian </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="col-md-12">Buffet Type</label>
+                <div class="col-md-12">
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="buffet[]" id="buffet1" value="breakfast"> Breakfast</label>
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="buffet[]" id="buffet2" value="lunch"> Lunch</label>
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="buffet[]" id="buffet4" value="eveningsnack"> Evening Snacks</label>
+                  <label for="" class="control-label col-md-6"><input type="checkbox" name="buffet[]" id="buffet5" value="dinner"> Dinner</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="col-md-12">Availibility</label>
+                <div class="col-md-12">
+                  <label for="" class="col-md-6 control-label"><input type="checkbox" name="timing[]" id="timing1" value="06:30 AM-10:30 AM"> 06:30 AM - 10:30 AM</label>
+                  <label for="" class="col-md-6 control-label"><input type="checkbox" name="timing[]" id="timing2" value="10:30 AM-02:30 PM"> 10:30 AM - 02:30 PM</label>
+                  <label for="" class="col-md-6 control-label"><input type="checkbox" name="timing[]" id="timing3" value="04:30 PM-07:30 PM"> 04:30 PM - 07:30 PM</label>
+                  <label for="" class="col-md-6 control-label"><input type="checkbox" name="timing[]" id="timing4" value="07:30 PM-10:30 PM"> 07:30 PM - 10:30 PM</label>
+                </div>
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save Item</button>
+                  <a class="btn btn-default" href="index.html"><i class="fa fa-reply"></i> Back to Home</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+
+  </div>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
